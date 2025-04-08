@@ -56,7 +56,7 @@ export default function Home() {
 
       <footer className="mt-auto bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} Feedback Collector - Developed by <span className="font-medium">Your Name</span></p>
+          <p>© {new Date().getFullYear()} Feedback Collector - Developed by <span className="font-medium">Mayank Kumar</span></p>
           <p className="text-xs mt-1">Submission for Developer Evaluation Task - April 2025</p>
         </div>
       </footer>
