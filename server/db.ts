@@ -8,3 +8,4 @@ export const db = drizzle(client, { schema });
 
 // Log that the database is connected
 console.log('Database connected');
+// Complete
