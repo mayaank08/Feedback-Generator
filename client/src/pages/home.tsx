@@ -20,8 +20,8 @@ export default function Home() {
       <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <MessageSquare className="w-8 h-8 text-primary" />
-            <h1 className="text-xl font-bold text-primary-600 dark:text-primary-400">Feedback Collector</h1>
+            <MessageSquare className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+            <h1 className="text-lg sm:text-xl font-bold text-primary-600 dark:text-primary-400">Feedback Collector</h1>
           </div>
           <ThemeToggle />
         </div>
@@ -29,9 +29,9 @@ export default function Home() {
 
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
-          <div className="mb-8 flex justify-end">
+          <div className="mb-6 sm:mb-8 flex justify-center sm:justify-end">
             <button 
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors dark:bg-primary-700 dark:hover:bg-primary-800"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors dark:bg-primary-700 dark:hover:bg-primary-800"
               onClick={toggleAdmin}>
               {isAdmin ? 'Hide Feedback' : 'View Submitted Feedback'}
             </button>
@@ -56,8 +56,8 @@ export default function Home() {
 
       <footer className="mt-auto bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} Feedback Collector - Developed by <span className="font-medium">John Doe</span></p>
-          <p className="text-xs mt-1">Submission for Developer Evaluation Task</p>
+          <p>© {new Date().getFullYear()} Feedback Collector - Developed by <span className="font-medium">Your Name</span></p>
+          <p className="text-xs mt-1">Submission for Developer Evaluation Task - April 2025</p>
         </div>
       </footer>
     </div>

@@ -44,16 +44,16 @@ export default function FeedbackList({ isVisible }: FeedbackListProps) {
             <div className="space-y-4">
               {feedbackItems.map((item) => (
                 <div key={item.id} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-600">
-                  <div className="flex justify-between items-start">
+                  <div className="flex flex-col sm:flex-row justify-between items-start">
                     <div>
                       <h3 className="font-medium text-gray-900 dark:text-white">{item.name}</h3>
                       <p className="text-sm text-gray-500 dark:text-gray-400">{item.email}</p>
                     </div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
                       {new Date(item.timestamp).toLocaleString()}
                     </div>
                   </div>
-                  <p className="mt-2 text-gray-700 dark:text-gray-300">{item.message}</p>
+                  <p className="mt-2 text-gray-700 dark:text-gray-300 break-words">{item.message}</p>
                 </div>
               ))}
             </div>
